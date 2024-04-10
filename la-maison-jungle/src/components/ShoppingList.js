@@ -1,4 +1,5 @@
 import { plantList } from '../datas/plantList'
+import CareScale from '../components/CareScale'
 import '../styles/ShoppingList.css'
 
 
@@ -23,6 +24,8 @@ function ShoppingList() {
                         {plant.name}
                     {plant.isBestSale && <span>🔥</span>}
                     {plant.isSpecialOffer && <div className='lmj-sales'>Soldes</div>}
+                    <CareScale careType='water' scaleValue={plant.water} />
+                    <CareScale careType='light' scaleValue={plant.light} />
                 </li>
                 ))}
             </ul>
