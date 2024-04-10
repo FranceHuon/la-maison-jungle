@@ -1,5 +1,6 @@
 import { plantList } from '../datas/plantList'
 import CareScale from '../components/CareScale'
+import PlantItem from '../components/PlantItem'
 import '../styles/ShoppingList.css'
 
 
