@@ -4,8 +4,11 @@ import '../styles/ShoppingList.css'
 
 
 function ShoppingList() {
+    // Création d'un tableau contenant les catégories uniques de plantes
+    // Utilisation de la méthode reduce pour itérer sur la liste des plantes
     const categories = plantList.reduce(
         (acc, plant) =>
+         // Vérification si la catégorie de la plante est déjà présente dans le tableau d'accumulation (acc)
             acc.includes(plant.category) ? acc : acc.concat(plant.category),
         []
 
